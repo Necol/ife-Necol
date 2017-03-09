@@ -108,7 +108,7 @@ function delete_right()
 	var len = main.children.length;
     if (len > 0) 
     {
-    	main.removeChild(main.children[0]);
+    	main.removeChild(main.children[len-1]);
     }
     else
     {
@@ -131,15 +131,16 @@ function delete_left()
 }
 
 //点击移出
-function point_move()
+(function point_move()
 {
 	main.addEventListener('click',function(event)
 	{
-		console.log(event.target)
+		// var event=event||window.event;
+  //       var target=event.target||event.srcElement;
 		this.removeChild(event.target);
 	})
-}
-point_move();
+})()
+
 
 
 
