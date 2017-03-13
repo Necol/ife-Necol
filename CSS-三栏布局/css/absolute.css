@@ -1,0 +1,74 @@
+*{
+	margin: 0;
+	padding: 9;
+}
+body{
+	width: 100%;
+}
+
+.main{
+	width: 80%;
+	background: #eee;
+	padding: 20px;
+	margin: auto;
+	position: relative;
+	min-height: 420px;
+}
+
+
+/*左侧positon*/
+.left{
+	width: 200px;
+	background: #fff;
+	border:2px solid #999;
+	padding: 20px;
+	position: absolute;   
+}
+
+.left > .team_logo{
+	box-sizing: border-box;
+	width: 80px;
+	height: 80px;
+	background: #eee;
+	border:2px solid #999;
+	text-align: center;
+}
+
+.left >p{
+	position: absolute;
+	right: 40px;
+	top: 20px;
+	text-align: center;
+}
+
+
+
+/*右侧*/
+.right{
+	width: 120px;
+	border:2px solid #999;
+	background: #fff;
+	position: absolute;
+	right: 20px;
+
+}
+
+.right > div {
+	width: 80px;
+	height: 80px;
+	background: #eee;
+	border:2px solid #999;
+	margin: 20px;
+	box-sizing: border-box;
+	text-align: center;
+
+}
+
+/*中间区*/
+.middle{
+	position: absolute;
+	border:2px solid #999;
+	background: #fff;
+	margin: 0 160px 0 260px;
+	min-width: 300px;
+}

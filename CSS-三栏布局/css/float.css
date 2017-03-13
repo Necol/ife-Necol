@@ -1,0 +1,66 @@
+/*通用*/
+*{
+	margin: 0;
+	padding: 0;
+	text-decoration: none;
+	list-style: none;
+}
+
+/*主背景*/
+.main{
+	width: 80%;
+	background: #eee;
+	padding: 20px;
+	margin: auto;
+	overflow: hidden;
+}
+
+/*左侧positon*/
+.left{
+	width: 200px;
+	background: #fff;
+	border:2px solid #999;
+	padding: 20px;
+	float: left;
+}
+
+.left > .team_logo{
+	box-sizing: border-box;
+	float: left;
+	width: 80px;
+	height: 80px;
+	background: #eee;
+	border:2px solid #999;
+	text-align: center;
+}
+
+.left >p{
+	text-align: center;
+}
+
+
+
+/*右侧*/
+.right{
+	width: 120px;
+	float: right;
+	border:2px solid #999;
+	background: #fff;
+}
+
+.right > div {
+	width: 80px;
+	height: 80px;
+	background: #eee;
+	border:2px solid #999;
+	margin: 20px;
+	box-sizing: border-box;
+	text-align: center;
+}
+
+
+.middle{
+	border:2px solid #999;
+	background: #fff;
+	margin: 0 140px 0 260px;
+}
