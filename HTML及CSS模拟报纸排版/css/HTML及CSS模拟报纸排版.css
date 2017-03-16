@@ -1,0 +1,413 @@
+/*通配*/
+*{
+	margin: 0;
+	padding: 0;
+	text-decoration: none;
+	/*font-size: 100%;*/
+	/*font-family: '微软雅黑',Sans-serf;*/
+	/*font-weight: normal;
+	color:#000000;*/
+}
+
+body{
+	width: 980px;
+	height: 1386px;
+	margin: 20px auto;
+	/*padding: 0 20px;*/
+	/*box-sizing: border-box;*/
+	border:2px solid #938e8c;
+}
+
+/*头部*/
+#head{
+	width: 892px;
+	height: 62px;
+	border-bottom: 2px solid #938e8c;
+	margin: auto;
+	font-size: 12px;
+	font-family: '黑体';
+	overflow: hidden;
+}
+
+#head > .logo{
+	display: inline-block;
+	width: 110px;
+	height: 62px;
+	background: #d45d5c;
+	color: #ffffff;
+	line-height: 100px;
+	text-indent: .5em;
+}
+
+#head > span{
+	float: right;
+	line-height: 110px;
+}
+
+
+/*文章上半左图*/
+#section1{
+	width: 100%;
+	overflow: hidden;
+}
+#section1 > .main_picture{
+	width: 640px;
+	margin: 45px;
+	background: url(../img/main.jpg) no-repeat;
+}
+/*主－左半透明图*/
+#section1 > .main_picture > .left_picture{
+	background: #77815f;
+	opacity: .5;
+	filter: alpha(opacity=50);
+}
+/*主－右半透明图*/
+#section1 > .main_picture > .right_picture{
+	float: right;
+	background: #e5b7b7;
+	opacity: .5;
+	filter: alpha(opacity=50);
+}
+.div_picture{
+	width: 191px;
+	height: 300px;
+	opacity: .5;
+	filter: alpha(opacity=50);
+}
+
+/*文章上右半*/
+#section1 > .main_text{
+	float: right;
+	width: 204px;
+	margin: 45px;
+	border-top:2px solid #cc8091;
+	font-family: '微软雅黑';
+}
+#section1 > .main_text > p{
+	display: inline-block;
+	border-bottom: 2px solid #000;
+	line-height: 20px;
+	margin-bottom: 10px;
+}
+#section1 > .main_text > p:first-letter{
+	font-size: 24px;
+}
+#section1 > .main_text > span{
+	display: block;
+	font-size: 12px;
+	color:#676767;
+	font-family: "楷体";
+	line-height: 10px;
+	font-style: italic;
+	margin-top: -5px;
+}
+#section1 > .main_text > h1{
+	font-size: 116px;
+	color:#75b86b;
+	font-style: italic;
+	font-weight: bold;
+	margin-left: -24px;
+}
+/*另一部分*/
+#section1 > .main_text > .css > h2{
+	display: inline-block;
+	font-size: 55px;
+	color:#cc8091;
+	float: left;
+}
+#section1 > .main_text > .css > span{
+	display: inline-block;
+	font-size: 21px;
+	color:#cc8091;
+	margin-top: 20px;
+	position: absolute;
+}
+#section1 > .main_text > .css > i{
+	display: inline-block;
+	font-size: 12px;
+	color:#cc8091;
+	position: absolute;
+	margin-top: 45px;
+
+}
+
+
+/*中间三部曲*/
+#section2{
+	width: 641px;
+	margin:0 0 45px 45px;
+	overflow: hidden;
+}
+#section2 > .common{
+	width: 200px;	
+	float: left;
+	margin-right:23px;
+	font-size: 12px;
+	color:#767777;
+	font-family: '宋体';
+	line-height: 16px;
+	opacity: .7;
+}
+
+#section2 > .common > p{
+	font-size: 16px;
+	text-decoration: underline;
+	font-family: "微软雅黑";
+	color:#418c59;
+	margin:0 0 10px 0;
+	font-weight: bold;
+}
+
+#section2 > .how{
+	float: left;
+	width: 195px;	
+	font-size: 12px;
+	color:#cd4a48;
+	font-family: '微软雅黑';
+	line-height: 16px;
+	opacity: .7;
+	line-height: 20px;
+}
+#section2 > .how > p{
+	font-size: 16px;
+	text-decoration: underline;
+	font-family: "微软雅黑";
+	color:#cd4a48;
+	margin:0 0 10px 0;
+	font-weight: bold;
+}
+
+#section2 > .how > .quto{
+	position: absolute;
+	margin-top: 25px;
+}
+
+
+/*文章下半部分*/
+/*下左半上部分*/
+aside.technologe{
+	width: 892px;
+	margin: auto;
+	position: relative;
+}
+div.technologe_left{
+	border-bottom:2px solid #11456b; 
+	margin: 0  454px 30px 0;
+	/*0,0,1,1*/
+}
+div.technologe_left > p{
+	font-family: "黑体";
+	color:#11456b;
+	font-weight: bold;
+	font-size: 42px;
+	padding-bottom: 6px;
+	line-height: 42px;
+	/*0,0,1,2*/
+}
+div.technologe_left p:first-child > span{
+	font-size: 72px;
+	color:#f5e327;
+	font-style: italic;
+	/*0,0,2,3*/
+	/*选择类名为technologe的div中的首个子元素中的P元素之后的子后代span元素*/
+	/*span做为P的子元素拥有了自己的属性外，继承了来自父元素的两个属性*/
+}
+div.technologe_left > p:nth-of-type(2){
+	font-size: 33px;
+	/*0,0,2,1*/
+}
+
+/*下左半下部分*/
+div.technologe_right{
+	margin: 0  454px 30px 0;
+	color:#767777;
+	font-size: 12px;
+	font-family: "宋体";
+	line-height: 16px;
+	/*0,0,1,1*/
+}
+div.technologe_right >span {
+	color:#f5e327;
+	font-size: 70px;
+	font-family: "微软雅黑";
+	float: left;
+	line-height: 70px;
+	/*margin-left: -30px;*/
+} 
+div.technologe_right div{
+	display: inline;
+	width: 168px;
+	height: 288px;
+	background: url(../img/left.jpg) no-repeat;
+	background-size: 100%;
+	float: right;
+	margin: 1em 0 1em 1em ;
+	border: none;
+}
+div.technologe_right  p{
+		text-indent: 2em;
+}
+
+
+/*下右上部分*/
+div.introduction{
+	position: absolute;
+	top: 0;
+	right: 0;
+}
+
+div.introduction > div:first-child{
+	width: 434px;
+	height: 275px;
+	background: url(../img/right.jpg) no-repeat;
+	background-size: 100% 100%;
+	margin-bottom: 30px;
+}
+div.introduction > .opacity > div:first-child{
+	width: 100%;
+	height: 60px;
+	position: absolute;
+	margin-top: 215px;
+	background: rgba(53,52,52,.5);
+}
+div.introduction > .opacity p{
+	margin-left: 50px;
+	margin-top: 8px;
+	padding-left: 30px;
+	text-align: left;
+	line-height: 44px;
+	font-family: "微软雅黑";
+	font-size: 26px;
+	color: #ffffff;
+	height: 44px;
+	border-left: 3px solid #72b16a;
+}
+div.introduction > .opacity p > span{
+	font-size: 12px;
+	color: #72b16a;
+	font-style: italic;
+	padding-left: 10px;
+}
+
+/*下右下部分*/
+div.introduction > .text_area{
+	width: 434px;
+	height: 342px;
+	background: #eeedd6;
+
+}
+
+div.introduction > .text_area  .world{
+	width: 202px;
+	height: 160px;
+	position: absolute;
+	bottom: 0;
+	right: 0;
+	margin: auto;
+	padding: 20px;
+	box-sizing: border-box;
+	font-size: 14px;
+	color: #5a5b5b;
+	font-family: "黑体";
+	font-style: italic;
+	line-height: 16px;
+	text-align: left;
+}
+div.introduction > .text_area  .world > i:first-child{
+	background: url(../img/up.png) no-repeat; 
+	background-size: 100%;
+	width: 25px;
+	height: 25px;
+	float: left;
+	margin-right: 15px;
+	margin-top: -10px;
+}
+div.introduction > .text_area  .world > i:nth-of-type(2){
+	background: url(../img/down.png) no-repeat; 
+	background-size: 100%;
+	width: 25px;
+	height: 25px;
+	position: absolute;
+	bottom: 10px;
+	right: 20px;
+	margin: auto;
+}
+
+div.introduction > .text_area >p{
+	padding: 20px;
+	font-size: 14px;
+	color: #5a5b5b;
+	font-family: "宋体";
+	text-align: center;
+	position: relative;
+}
+
+div.introduction > .text_area span{
+	font-size: 12px;
+	color: #5a5b5b;
+	font-family: "宋体";
+	font-style: italic;
+}
+div.introduction > .text_area > p > i{
+	border-bottom: 5px solid red;
+	border-left: 5px solid transparent;
+	border-right: 5px solid red;
+	border-top: 5px solid transparent;
+	transform:rotate(-135deg);
+	position: absolute;
+	left: 30px;
+	top:26px;
+	margin: auto;
+}
+
+div.introduction > .text_area  .down{
+	width: 240px;
+	height: 160px;
+	background: #d45d5c;
+	position: absolute;
+	bottom: 0;
+	left: 0;
+	margin: auto;
+}
+
+div.introduction > .text_area > .down p{
+	display: inline-block;
+	margin-top: 40px;
+	height: 86px;
+	margin-left:72px;
+	padding-left: 5px;
+	font-family: "黑体";
+	font-size: 21px;
+	color: #ffffff;
+	border-left: 2px solid #ffffff;
+}
+div.introduction > .text_area > .down > p > span{
+	line-height: 6px;
+	font-size: 12px;
+	line-height: 6px;
+
+}
+
+div.introduction > .text_area > .down > span{
+	font-family: "微软雅黑";
+	font-size: 65px;
+	color: #ffffff;
+	position: absolute;
+	margin: auto;
+	top: 40px;
+	left: 0px;
+}
+
+footer{
+	border-top: 1px solid #938e8c;
+	width: 892px;
+	margin: auto;
+	margin-top: 50px;
+}
+footer > p {
+	float: right;
+	font-size: 12px;
+	font-style: italic;
+	color:#d45d5c;
+	font-family: "黑体";
+}
